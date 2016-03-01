@@ -5,22 +5,49 @@
 
 	<style type="text/css" media="screen">
 		body{
-			background-color: #f00;
+			background-color: #222;
 			color: #ddd;
 			margin-top: 20px;
-		}
-		.thumbnails img{
-			width: 150px;
-			border: 4px solid #555;
-			margin: 0 10px 10px 0;
-			mask-type
+			text-align: center;
 		}
 
+		.thumbnails{
+			width: 20%;
+			float: left;
+		}
+
+		body .gallery .thumbnails img{
+			width: 95% !important;
+		}
+
+		.gallery .thumbnails img{
+			width: 10%;
+		}
+
+		.thumbnails img{
+			width: 95%;
+			margin: auto;
+			border: 4px solid #555;
+			margin: 0 10px 10px 0;
+		}
+
+		.thumbnails img{
+			width: 10% !important;
+		}
 
 		.thumbnails img:hover{
 			border: 4px solid #0cf;
 			cursor: pointer;
 		}
+
+		.preview{
+			width: 80%;
+			float: right;
+		}
+		.preview img{
+			width: 80%;
+		}
+
 		.gallery, .preview{
 			text-align: center;
 		}
@@ -43,8 +70,8 @@
 		<img src="images/image1.jpg" name="img1" onclick="preview.src=img1.src">
 		<img src="images/image2.jpg" name="img2" onclick="preview.src=img2.src">
 		<img src="images/image3.jpg" name="img3" onclick="preview.src=img3.src">
-		<img src="images/image4.jpg" name="img4" onmouseover="preview.src=img4.src">
-		<img src="images/image5.jpg" name="img5" onmouseover="preview.src=img5.src">
+		<img src="images/image4.jpg" name="img4" onclick="preview.src=img4.src">
+		<img src="images/image5.jpg" name="img5" onclick="preview.src=img5.src">
 	</div>
 
 	<!-- The preview window for our thumnails -->
